@@ -1,0 +1,17 @@
+<%- include('partials/header.ejs') %>
+ 
+    <h1>Home</h1>
+    <!-- Setup a variable named "startingContent": Defined as "homeStartingContent" inside (app.js) look line: 8 and 28 -->
+    <p> <%= startingContent %> </p> 
+ 
+    <!-- Advanced for loop function(parameter) -->
+    <% posts.forEach(function(post) { %>  
+        <h1><%= post.title %></h1>    
+        <p>
+            <%= post.content.substring(0, 100) + "..." %> 
+            <!-- Setup %post.title% as a path: defined inside ("app.js") as (".../:postName") line: 63 -->
+            <a href="/posts/<%=post._id%>">Read more</a>
+        </p>  
+    <% }); %> 
+ 
+<%- include('partials/footer.ejs') %>
