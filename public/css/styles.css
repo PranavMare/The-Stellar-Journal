@@ -1,25 +1,38 @@
+/* ********** ******* *** Container Section *** ******* ********** */
 .container-fluid {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding: 70px 0;
 }
-/* ************ ******* *** Header Section *** ******* ************ */
+
+/* ********** ******* *** Header Section *** ******* ********** */
 .navbar {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border: 0;
+  padding: 15px 0;
+  border: none;
   border-radius: 0;
   margin-bottom: 0;
-  font-size: 12px;
-  letter-spacing: 5px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-.navbar-brand  a:hover {
-  text-decoration: none;
-  color: #1abc9c !important;
+
+.navbar-brand a {
+  color: #1abc9c;
+  transition: all 0.3s ease-in-out;
 }
-.navbar-nav  li a:hover {
-  color: #1abc9c !important;
+
+.navbar-brand a:hover {
+  color: #fff;
 }
-/* ************ ******* *** Footer Section *** ******* ************ */
+
+.navbar-nav li a {
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav li a:hover {
+  color: #1abc9c;
+}
+
+/* ********** ******* *** Footer Section *** ******* ********** */
 .footer-padding {
   padding-bottom: 60px;
 }
@@ -35,6 +48,6 @@
 
 .footer p {
   margin-top: 25px;
-  font-size: 12px;
-color: #fff;
+  font-size: 14px;
+  color: #fff;
 }
